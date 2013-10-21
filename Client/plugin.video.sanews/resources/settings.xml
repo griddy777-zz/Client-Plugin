@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="general">
+		 <setting id="disp" type="text" label="35001" default=""/>
+    </category>
+</settings>
