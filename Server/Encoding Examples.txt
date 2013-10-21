@@ -1,0 +1,30 @@
+./ffmpeg -fix_sub_duration -i '/home/user/Desktop/Content/Source/Tron Legacy.m4v' -c:a libfdk_aac -ar 44100 -ac 2 -ab 128k -c:v libx264 -s 640x356 -preset slow -tune ssim -t 180 -b:v 400k /home/user/Desktop/Content/ContentMediumQ/Tron_legacy.mp4
+
+
+./ffmpeg -i '/home/user/Desktop/Content/Source/Crystallize_Lindsey_Stirling_Dubstep_Violin.mp4' -c:a libfdk_aac -ar 44100 -ac 2 -ab 128k -c:v libx264 -s 640x356 -preset slow -tune ssim -t 180 -b:v 400k /home/user/Desktop/Content/ContentMediumQ/Crystallize_Lindsey_Stirling_Dubstep_Violin.mp4
+
+./ffmpeg -i '/home/user/Desktop/Content/Source/Crystallize_Lindsey_Stirling_Dubstep_Violin.mp4' -c:v libtheora -qscale:v 7 -codec:a libvorbis -qscale:a 5 -t 180 /home/user/Desktop/Content/ContentMediumQ/Crystallize_Lindsey_Stirling_Dubstep_Violin.ogg
+
+V2
+./ffmpeg -i '/home/user/Desktop/Content/Source/Crystallize_Lindsey_Stirling_Dubstep_Violin.mp4' -c:v libtheora -qscale:v 5 -codec:a libvorbis -qscale:a 5 -t 180 -s 720x400 /home/user/Desktop/Content/ContentMediumQ/Crystallize_Lindsey_Stirling_Dubstep_Violin.ogg
+
+./ffmpeg -i '/home/user/Desktop/Content/Source/Skyrim_Lindsey_Stirling_Peter_Hollens_hd720.mp4' -c:v libtheora -qscale:v 6 -codec:a libvorbis -qscale:a 5 -t 180 -s 720x400 /home/user/Desktop/Content/ContentMediumQ/Skyrim_Lindsey_Stirling_Peter_Hollens_hd720.ogg
+
+------------------------------------------------------
+Test Data:
+./ffmpeg -i '/home/user/Desktop/Content/Source/Crystallize_Lindsey_Stirling_Dubstep_Violin.mp4' -c:a libfdk_aac -ar 44100 -ac 2 -ab 64k -c:v libx264 -s 720x400 -preset slow -tune ssim -b:v 100k -t 180 '/home/user/Desktop/Test Data/100.mp4'
+
+./ffmpeg -i '/home/user/Desktop/Content/Source/Crystallize_Lindsey_Stirling_Dubstep_Violin.mp4' -c:a libfdk_aac -ar 44100 -ac 2 -ab 64k -c:v libx264 -s 720x400 -preset slow -tune ssim -b:v 200k -t 180 '/home/user/Desktop/Test Data/200.mp4'
+
+./ffmpeg -i '/home/user/Desktop/Content/Source/Crystallize_Lindsey_Stirling_Dubstep_Violin.mp4' -c:a libfdk_aac -ar 44100 -ac 2 -ab 64k -c:v libx264 -s 640x356 -preset slow -tune ssim -b:v 300k -t 180 '/home/user/Desktop/Test Data/300.mp4'
+
+./ffmpeg -i '/home/user/Desktop/Content/Source/Crystallize_Lindsey_Stirling_Dubstep_Violin.mp4' -c:a libfdk_aac -ar 44100 -ac 2 -ab 64k -c:v libx264 -s 640x356 -preset slow -tune ssim -b:v 400k -t 180 '/home/user/Desktop/Test Data/400.mp4'
+
+./ffmpeg -i '/home/user/Desktop/Content/Source/Crystallize_Lindsey_Stirling_Dubstep_Violin.mp4' -c:a libfdk_aac -ar 44100 -ac 2 -ab 64k -c:v libx264 -s 640x356 -preset slow -tune ssim -b:v 500k -t 180 '/home/user/Desktop/Test Data/500.mp4'
+
+./ffmpeg -i '/home/user/Desktop/Content/Source/Crystallize_Lindsey_Stirling_Dubstep_Violin.mp4' -c:a libfdk_aac -ar 44100 -ac 2 -ab 64k -c:v libx264 -s 640x356 -preset slow -tune ssim -b:v 600k -t 180 '/home/user/Desktop/Test Data/600.mp4'
+
+./ffmpeg -i '/home/user/Desktop/Content/Source/Crystallize_Lindsey_Stirling_Dubstep_Violin.mp4' -c:a libfdk_aac -ar 44100 -ac 2 -ab 64k -c:v libx264 -s 640x356 -preset slow -tune ssim -b:v 700k -t 180 '/home/user/Desktop/Test Data/700.mp4'
+
+./ffmpeg -i '/home/user/Desktop/Content/Source/Crystallize_Lindsey_Stirling_Dubstep_Violin.mp4' -c:a libfdk_aac -ar 44100 -ac 2 -ab 64k -c:v libx264 -s 640x356 -preset slow -tune ssim -b:v 800k -t 180 '/home/user/Desktop/Test Data/800.mp4'
+
